@@ -57,3 +57,37 @@
 .container__botao {
   display: none;
 }
+.container__titulo {
+  display: none;
+}
+.opcoes {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .cabecalho__menu-hamburger {
+    display: none;
+  }
+  .container__imagem-favoritos img {
+    display: none;
+  }
+  
+  .container__titulo{
+  display: block;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .container__titulo-negrito {
+    font-weight: 700;
+  }
+
+  .opcoes {
+    display: flex;
+  }
+
+  .opcoes__item {
+    margin-right: 2rem;
+
+  }
+}
