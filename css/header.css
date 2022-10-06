@@ -50,7 +50,7 @@
 .lista-menu__link {
   background: var(--azul-degrade);
   -webkit-background-clip: text;
-  /* -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent;
   background-clip: text;
   text-transform: uppercase;
 }
@@ -88,6 +88,13 @@
 
   .opcoes__item {
     margin-right: 2rem;
-
   }
+
+    .opcoes__categorias:checked~ .lista-menu {
+      display: block;
+      width: auto;
+    }
+   .opcoes__categorias {
+    display: none;
+   }
 }

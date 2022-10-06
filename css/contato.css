@@ -37,3 +37,32 @@ text-fill-color: transparent;
   background: url(../img/Email.svg) no-repeat;
   padding-left: 2rem;
 }
+
+@media screen and (min-width: 1024px) {
+  .contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    padding: 3.5rem 4rem 3.5rem 8rem;
+    /* padding-left: 2rem; */
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+  }
+
+  .contato__titulo {
+    font-size: 24px;
+  }
+  .contato__email {
+    grid-column: 2;
+    grid-row: 1/3;
+    box-sizing: border-box;
+    width: 80%;
+    /* grid-row: span ; */
+  }
+
+  .contato__texto {
+    grid-column: 1;
+
+  }
+}

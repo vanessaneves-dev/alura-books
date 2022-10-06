@@ -6,6 +6,7 @@ background-color: var(--branco);
 text-align: center;
 text-transform: uppercase;
 padding: 1rem 0 .5rem 0;
+font-family: var(--fonte-principal);
 }
 
 .swiper-slide img {
@@ -18,4 +19,22 @@ padding: 1rem 0 .5rem 0;
 .swiper-pagination {
   position: initial;
   margin: .5rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .carrossel__titulo {
+    padding: 2rem 0 1rem 0;
+    font-size: 26px;
+  }
+  .swiper-pagination {
+    margin: 2rem 0 3rem 0;
+  }
+  .swiper {
+    width: 60%;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    display: block;
+    top: 60%;
+  }
 }
